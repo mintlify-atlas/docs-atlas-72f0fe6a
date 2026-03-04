@@ -1,0 +1,104 @@
+{
+  "projectType": "saas",
+  "projectName": "Accenture Project Manager",
+  "projectDescription": "Enterprise project management system with role-based access, task tracking, resource allocation, and reporting capabilities for Accenture.",
+  "theme": "linden",
+  "primaryColor": "#A100FF",
+  "lightColor": "#C966FF",
+  "darkColor": "#7A00CC",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/administrator",
+              "guides/project-manager",
+              "guides/team-member",
+              "guides/client"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/project-management",
+              "features/task-management",
+              "features/team-management",
+              "features/resource-allocation",
+              "features/reporting",
+              "features/document-management"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/authentication",
+              "security/authorization",
+              "security/roles-permissions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/projects",
+              "api/tasks",
+              "api/users",
+              "api/resources",
+              "api/reports",
+              "api/documents"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Role-based access control with Administrator, Project Manager, Team Member, and Client roles",
+    "Complete project lifecycle management with milestones and tracking",
+    "Task management with dependencies and team member assignments",
+    "Resource allocation and skills-based team management",
+    "Document management with version control",
+    "Comprehensive reporting with Excel and PDF export",
+    "Real-time project tracking and dashboards",
+    "JWT-based authentication with security features"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login - User authentication",
+    "POST /api/auth/register - User registration",
+    "GET /api/proyectos - List all projects",
+    "POST /api/proyectos - Create project",
+    "GET /api/proyectos/{id} - Get project by ID",
+    "PUT /api/proyectos/{id} - Update project",
+    "DELETE /api/proyectos/{id} - Delete project",
+    "GET /api/tareas - List all tasks",
+    "POST /api/tareas - Create task",
+    "GET /api/usuarios - List all users",
+    "POST /api/usuarios - Create user",
+    "GET /api/recursos - List resources",
+    "GET /api/reportes - Generate reports",
+    "GET /api/documentos - List documents",
+    "POST /api/documentos - Upload document"
+  ]
+}
